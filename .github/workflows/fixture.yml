@@ -1,0 +1,12 @@
+name: Ground Truth P11-E06
+on:
+  pull_request:
+    types: [opened]
+    branches: [release-only]
+permissions: read-all
+jobs:
+  fixture:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo P11-E06
